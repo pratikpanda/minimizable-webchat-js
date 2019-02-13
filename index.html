@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A simple minimizable webchat implementation in vanilla javascript.">
+        <title>Minimizable Webchat</title>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="./src/main.css" type="text/css">
+        <script src="https://cdn.botframework.com/botframework-webchat/master/webchat.js" type="text/javascript" defer></script>
+        <script src="./src/minimizable-webchat.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        
+
+        <button class="maximize-chat" id="maximizeChat" onclick="displayChat()"><i class='fas fa-comment-alt'></i>&nbsp;&nbsp;Chat With Us</button>
+        
+        <div class="maximized-chat" id="maximizedChat">
+            <div class="chat-header" id="chatHeader">
+                <p class="chat-header-text">support</p>
+                <span class="minimize-chat" onclick="hideChat()">&#9660;</span>
+            </div>
+            <div class="chat-container">
+                <div id="webchat"></div>
+                <a class="contact-support-link" target="_blank" href="https://dmsapp.dealercenter.net/public/logmein">Contact Support</a>
+                <a class="powered-by-brand" target="_blank" href="https://www.dealercenter.com/">DealerCenter</p>
+            </div>
+        </div>
+    </body>
+</html>

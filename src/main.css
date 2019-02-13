@@ -1,0 +1,117 @@
+html, body, .maximized-chat { 
+    height: 100%; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#webchat {
+    height: calc(100% - 20px);
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Button used to maximize the chat window - fixed at the bottom of the page */
+.maximize-chat {
+    background-color: #2196F3;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 180px;
+  }
+  
+  /* The maximized chat - hidden by default */
+  .maximized-chat {
+    display: none;
+    position: fixed;
+    right: 15px;
+    z-index: 9;
+    bottom: 10px;
+    height: 450px;
+    width: 305px;
+    border: 2px solid #2196F3;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Add styles to the chat container */
+  .chat-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    height: calc(100% - 40px);
+    position: absolute;
+  }
+
+  .chat-header {
+    padding: 10px;
+    cursor: move;
+    z-index: 9;
+    background-color: #2196F3;
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+    width: 100%;
+  }
+
+  .chat-header-text {
+    display:inline;
+    text-align: center;
+  }
+
+  .minimize-chat {
+    color: #ffffff;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .minimize-chat:hover,
+  .minimize-chat:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .contact-support-link {
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+  }
+
+  .powered-by-brand {
+    margin-top: 5px;
+    float: right;
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+  }
+
+  .chat-feedback {
+      float: right;
+  }
+
+  .chat-feedback > p {
+    display: inline;
+  }
+
+  .positive-chat-feedback {
+      display: inline;
+  }
+
+  .negative-chat-feedback {
+    display: inline;
+}
