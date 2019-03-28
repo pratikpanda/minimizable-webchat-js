@@ -3,7 +3,7 @@
         {
             method: "POST",
             headers: {
-                "Authorization": "Bearer 0BAnfJTkb1w.cwA.xc8.CJd5nSziLcX43unMy9cljy323kw-VR-1mObVKO6DZUE"
+                "Authorization": "Bearer <SECRET>"
             }
         });
 
